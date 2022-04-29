@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesob Delivery</title>
+    <link rel="stylesheet" href="scss/styles.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <!-- mapbox -->
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <!-- full Viewport screen to make side bar in -->
+    <div class="fullViewport"></div>
+
+    <!-- scroll yo top -->
+    <!-- <section class="arrow">UP</section> -->
+    <a href="#" class="scrollup arrow" id="scroll-up">
+      <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+    <!-- navbar -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo-container">
+          <div class="toggle">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </div>
+          <h1 class="logo">Mesob <span class="p1"> Delivery</span></h1>
+        </div>
+
+        <!-- pickup/delivery and input address -->
+
+        <div class="pic-del-in">
+          <ul class="pic-del">
+            <li><a href="home.html" class="active">Delivery</a></li>
+            <li><a href="pickup.html">Pickup</a></li>
+          </ul>
+          <form>
+            <div class="address-input">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" placeholder="Enter delivery address" />
+            </div>
+          </form>
+        </div>
+
+        <!-- theme and signin container -->
+        <div class="theme-signin">
+          <!-- Theme change -->
+          <div class="theme-toggle">
+            <svg
+              id="darkMode"
+              style="width: 24px; height: 24px"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="none"
+            >
+              <path
+                class="sun"
+                fill="currentColor"
+                d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z"
+              />
+            </svg>
+          </div>
+
+          <!-- signin signup -->
+          <ul class="signin">
+            <li><a href="signin.html" class="btn --gray">Sign in</a></li>
+            <li><a href="signup.html" class="btn btn-2">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- side bar -->
+    <nav id="sidebar">
+      <div class="sidebar-container">
+        <ul class="signin-sidebar">
+          <li><a href="#" class="btn">Sign up</a></li>
+          <li><a href="#" class="btn --gray">Log in</a></li>
+        </ul>
+        <ul class="business-sidebar">
+          <li><a href="#">Create a business account</a></li>
+          <li><a href="#">Add your restaurant</a></li>
+          <li><a href="#">Sign up to deliver</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <header id="hero">
+      <div class="container">
+        <div class="hero-main">
+          <h1 class="hero-text">
+            <span>THINK</span>
+            <span>CLICK &</span>
+            <span>Pick</span>
+          </h1>
+          <!-- pickup/delivery and input address -->
+
+          <div class="pic-del-in">
+            <ul class="pic-del">
+              <li><a href="home.html" class="active">Delivery</a></li>
+              <li><a href="pickup.html">Pickup</a></li>
+            </ul>
+            <form action="home1.html">
+              <div class="address-input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Enter delivery address" />
+                <button type="submit" class="btn --small">Find Food</button>
+              </div>
+            </form>
+            <h3><a href="#">Sign in</a> for your recent addresses</h3>
+          </div>
+        </div>
+      </div>
+      <img src="images/me.svg" class="phone" alt="" srcset="" />
+      <img src="images/ne.svg" class="bike" alt="" srcset="" />
+    </header>
+
+    <!-- provided jobs -->
+
+    <section id="jobs" class="jobs">
+      <div class="job job-1">
+        <div class="container">
+          <div class="col col-1">
+            <img src="./images/deliveryman.svg" alt="" />
+          </div>
+          <div class="col col-2">
+            <h1>Deliver with mesob delivery</h1>
+            <p>
+              As a delivery driver, you'll make reliable money-working anytime anywhere.
+            </p>
+            <a href="#" class="btn --small">Start earning</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="job job-2">
+        <div class="container">
+          <div class="col col-1"><img src="./images/bg.svg" alt="" /></div>
+          <div class="col col-2">
+            <h1>Partner with us</h1>
+            <p>
+
+              Grow your business and reach new customers by partnering with us
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              
+            </p>
+            <a href="#" class="btn --small">Add your restaurant</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="job job-3">
+        <div class="container">
+          <div class="col col-1"><img src="./images/ccc.svg" alt="" /></div>
+          <div class="col col-2">
+            <h1>Feed your employees</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              
+            </p>
+            <a href="#" class="btn --small">Create a business account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- map section -->
+
+    <section class="maps" >
+      <div class="container">
+      <h1>Our Locations</h1>
+      <div class="map" id="map"></div>
+    </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer id="footer">
+      <div class="container">
+        <!-- two rows of footer -->
+        <div class="row">
+          <!-- 2 cols for the first row and inside this cols -->
+          <div class="col">
+            <div class="col-in">
+              <h1 class="logo">Mesob <span class="p1"> Delivery</span></h1>
+              
+            </div>
+            <div class="col-in">
+              <form>
+                <div class="contact-us">
+                  <h2>Contact Us</h2>
+                  <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" required />
+                  </div>
+                  <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                      name="
+                    message"
+                      id="message"
+                      cols="30"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                  <button class="btn --small">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-in">
+              <ul>
+                <li><a href="#">Get Help</a></li>
+                <li><a href="#">Add your restaurant</a></li>
+                <li><a href="#">Sign up to deliver</a></li>
+                <li><a href="#">Create a business account</a></li>
+                <li><a href="#">Save on your first order</a></li>
+              </ul>
+            </div>
+            <div class="col-in">
+              <ul>
+                <li><a href="#">Restaurants near me</a></li>
+                <li><a href="#">View all cities</a></li>
+                <li><a href="#">Pickup near me</a></li>
+                <li><a href="#">About mesob delivery</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <p>
+              This site is protected by reCAPTCHA and the Mesob Privacy Policy
+              and Terms of Service apply
+            </p>
+          </div>
+          <div class="col">
+            <h4>Do not sell my info(Ethiopia)</h4>
+            <h4>&copy; 2022 Mesob Technologies Inc.</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- anime js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesob | Home</title>
+    <link rel="stylesheet" href="scss/styles.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- anime js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="home-nav">
+      <div class="container">
+        <div class="logo-container-1">
+          <a class="logo" href="index.html">Mesob <span class="p1"> Delivery</span></a>
+        </div>
+
+        <!-- pickup/delivery and input address -->
+
+        <div class="pic-del-loc-1">
+          <ul class="pic-del">
+            <li><a href="home.html" class="active">Delivery</a></li>
+            <li><a href="pickup.html">Pickup</a></li>
+          </ul>
+          
+          <!-- location -->
+          <div class="loc">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Debre Berhan</h4>
+          </div>
+        </div>
+
+        <!-- search-bar -->
+        
+          <div class="search-food">
+            <i class="fa fa-search"></i>
+            <input type="search" placeholder="Search" />
+          </div>
+        
+
+
+        <!-- cart -->
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <h4><span>0</span> Cart</h4>
+        </div>
+        
+        
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- cart box checkout-->
+ 
+    <nav id="cart" class="cart">
+
+        <i class="fa-solid fa-xmark cart-close" id="cart-close"></i>
+        <h1 class="cart-title-center">My Cart</h1>
+
+      <div class="cart-container">
+
+        <!-- article cart cards -->
+        <article class="cart-card">
+
+          <div class="cart-box">
+            <img src="./images/ramen.png" alt="" class="cart-img">
+          </div>
+
+          <div class="cart-details">
+            <h3 class="cart-title">Spicy Crab Ramen</h3>
+            <span class="cart-price">$50.99</span>
+
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                  <span class="cart-amount-box">
+                    <i class="fa-solid fa-minus"></i>
+                  </span>
+
+                  <span class="cart-amount-number">1</span>
+
+                  <span class="cart-amount-box">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+              </div>
+
+              <i class="fa-solid fa-trash cart-amount-trash"></i>
+          </div>
+          </div>
+
+        </article>
+        <article class="cart-card">
+
+          <div class="cart-box">
+            <img src="./images/ramen.png" alt="" class="cart-img">
+          </div>
+
+          <div class="cart-details">
+            <h3 class="cart-title">Spicy Crab Ramen</h3>
+            <span class="cart-price">$50.99</span>
+
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                  <span class="cart-amount-box">
+                    <i class="fa-solid fa-minus"></i>
+                  </span>
+
+                  <span class="cart-amount-number">1</span>
+
+                  <span class="cart-amount-box">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+              </div>
+
+              <i class="fa-solid fa-trash cart-amount-trash"></i>
+          </div>
+          </div>
+
+        </article>
+        <article class="cart-card">
+
+          <div class="cart-box">
+            <img src="./images/ramen.png" alt="" class="cart-img">
+          </div>
+
+          <div class="cart-details">
+            <h3 class="cart-title">Spicy Crab Ramen</h3>
+            <span class="cart-price">$50.99</span>
+
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                  <span class="cart-amount-box">
+                    <i class="fa-solid fa-minus"></i>
+                  </span>
+
+                  <span class="cart-amount-number">1</span>
+
+                  <span class="cart-amount-box">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+              </div>
+
+              <i class="fa-solid fa-trash cart-amount-trash"></i>
+          </div>
+          </div>
+
+        </article>
+        
+
+
+        </div>
+        <div class="cart-prices">
+          <span class="cart-prices-item">3 items</span>
+          <span class="cart-prices-total">$2880</span>
+      </div>
+      
+    </nav>
+
+  
+
+<!-- -===== main page ======= -->
+    <main id="main-page">
+      <div class="main-container">
+        <section class="search-1">
+          <div class="container">
+             <h1> Good Morning Mr/Ms</h1>
+             <h2> Crave it. Get it</h2>
+
+             <div class="search-con">
+              <input type="search" placeholder="Search" name="food-search" id="food-search">
+
+             
+              <i class="fa fa-search" aria-hidden="true" ></i>
+          
+            </div>
+          </div>
+        </section>
+        <section class="category-list">
+          <div class="container">
+            <a class="cat-item" href="#"  >
+              <img src="./images/category/italian.png" alt=""> 
+              <h2>Italian</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/pizza.png" alt="">
+              <h2>Pizza</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/Breakfast.png" alt="">
+              <h2>Breakfast</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/FastFood.png" alt="">
+              <h2>Fast Food</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/sandwich.png" alt="">
+              <h2>Sandwich</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/grocery.png" alt="">
+              <h2>Grocery</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/Indian.png" alt="">
+              <h2>Indian</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/healthy.png" alt="">
+              <h2>Healthy</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/comfortfood.png" alt="">
+              <h2>Comfort Food</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/Sushi_BrowseHome@3x.png" alt="">
+              <h2>Sushi</h2>
+            </a>
+            <a class="cat-item" href="#">
+              <img src="./images/category/ethio.png" alt="">
+              <h2>Ethiopian</h2>
+            </a>
+            
+          </div>
+        </section>
+
+        <section class="foods-filter">
+          <!-- filter bar -->
+          <aside id="filter" class="filter">
+            <div class="filter-container">
+              <h1 class="heading">All stores</h1>
+              <ul class="sort-type">
+                <li class="sorts"><a>Sort</a>
+                <ul>
+                  <li><input type="radio" name="picked"  id="picked" checked> <label for="picked"> Picked for you (default)</label> </li>
+                  <li><input type="radio" name="picked" id="popular"> <label for="popular">Most popular</label> </li>
+                  <li><input type="radio" name="picked" id="rate"> <label for="rate">Rating</label> </li>
+                  <li><input type="radio" name="picked" id="time"> <label for="time">Delivery time</label> </li>
+                </ul>
+                </li>
+               
+                <li class="sorts"><a>Price Range</a>
+                <ul class="dollar">
+                  <li><input type="checkbox" name="one" id="price" ></li>
+                  <li><input type="checkbox" name="two" id="price" ></li>
+                  <li><input type="checkbox" name="three" id="price" ></li>        
+                </ul>
+                </li>
+               
+                <li class="sorts"><a>Dietary</a>
+                <ul>
+                  <li><input type="checkbox" name="Vegetarian" id="dietary" ></li>
+                  <li><input type="checkbox" name="Gluten-free" id="dietary" ></li>
+                  <li><input type="checkbox" name="Vegan" id="dietary" ></li>  
+                </ul>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div class="foods">
+            <h1>Foods</h1>
+            <div class="food-container">
+              
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+              <div class="dishes-card">
+                <div class="head">
+                <h3 class="dishes-card__heading">Spicy Crab Ramen</h3>
+                <i class="fas fa-heart    "></i>
+                
+              </div>
+              <div class="dishes-card__img">
+
+                <img
+                  src="./images/ramen.png"
+                  alt="crab"
+                  class="img"
+                  />
+                  </div>
+                <h5 class="dishes-card__tag">Potato / bread / cheese</h5>
+                <div class="dishes-card__cta">
+                  <h4 class="dishes-card__price">$50.99 <span class="fee"> <span>  $10.99 Delivery Fee</span> <span> 40-50 min </span> <span></span></h4>
+                  <button>order now</button>
+                </div>
+              </div>
+
+              
+             
+              
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
