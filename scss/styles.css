@@ -49,15 +49,39 @@
   --container-width:1350px;
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (max-width: 1389px) {
   :root {
-    --biggest-font-size: 2.5rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --container-width:1250px;
+  }
+}
+
+@media screen and (max-width: 1278px) {
+  :root {
+    --container-width:1150px;
+  }
+}
+
+@media screen and (max-width: 1093px) {
+  :root {
+    --container-width:950px;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  :root {
+    --container-width:850px;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  :root {
+    --container-width:750px;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  :root {
+    --container-width:450px;
   }
 }
 
@@ -623,6 +647,7 @@ body {
   -webkit-animation: gradient 10s ease infinite;
           animation: gradient 10s ease infinite;
   background-size: 400% 400%;
+  overflow-x: hidden;
 }
 
 #hero {
@@ -2182,6 +2207,96 @@ body {
     width: 300px;
     line-height: 1rem;
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+  #hero .phone {
+    left: 350px;
+  }
+  #hero .bike {
+    left: 900px;
+    bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 1350px) and (max-width: 1215px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+  #hero .phone {
+    left: 400px;
+  }
+  #hero .bike {
+    left: 800px;
+    bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 1350px) and (max-width: 1113px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+  #hero .phone {
+    left: 250px;
+  }
+  #hero .bike {
+    left: 650px;
+    bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 1350px) and (max-width: 976px) {
+  #navbar .container {
+    font-size: .8rem;
+  }
+  #navbar .container .pic-del-in {
+    display: none;
+  }
+  .hero-main {
+    margin-left: 30px;
+  }
+  #hero .phone {
+    left: 150px;
+  }
+  #hero .bike {
+    left: 550px;
+    bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 1350px) and (max-width: 871px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+  #hero .phone {
+    display: none;
+  }
+  #hero .bike {
+    left: 350px;
+    bottom: 65px;
+  }
+  #hero .container .hero-main .pic-del-in .address-input input {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+  #hero .phone {
+    display: none;
+  }
+  #hero .bike {
+    left: 5px;
+    bottom: 65px;
+  }
+  #hero .container .hero-main .pic-del-in .address-input input {
+    width: 60vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */
