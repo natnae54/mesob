@@ -814,8 +814,12 @@ body {
   color: var(--dark-color);
 }
 
+#jobs .job .container .col img {
+  height: 95%;
+}
+
 #jobs .job-1 .col-1 img {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 #jobs .job-1 .col-2 h1 {
