@@ -1,0 +1,260 @@
+/*=============== BREAKPOINTS ===============*/
+
+// for index html
+/* For  devices */
+@media screen and (max-width: 1184px) {
+  .search-food {
+    display: none;
+  }
+}
+// @media screen and (max-width: 1384px){
+
+//     .home-nav{
+
+//     }
+// }
+@media screen and (max-width: 1048px) {
+  .dollar {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 671px) {
+  .filter {
+    width: 30%;
+  }
+
+  .foods {
+    margin-left: 100px;
+    width: 70%;
+  }
+
+  .dishes-card {
+    width: 300px;
+  }
+
+  .loc {
+    h4 {
+      display: none;
+    }
+  }
+}
+
+// index
+
+@media screen and (max-width: 576px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+
+  #hero {
+    .phone {
+      display: none;
+    }
+    .bike {
+      left: 10px;
+      bottom: 12px;
+    }
+    .container {
+      .hero-main {
+        .pic-del-in {
+          .address-input {
+            input {
+              width: 60vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .job {
+    .container {
+      background: var(--light-glass);
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      margin-top: 10px;
+      margin-bottom: 40px;
+
+      .col {
+        align-self: center;
+        width: 80%;
+        height: 100%;
+        color: var(--dark-color);
+
+        h1 {
+          margin-top: 4px;
+          font-size: 2rem;
+          font-weight: 550;
+          color: var(--dark-color);
+          margin-bottom: 30px;
+        }
+
+        p {
+          width: 300px;
+          line-height: 1rem;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  // footer
+}
+
+@media screen and (max-width: 1350px) {
+    
+  .hero-main {
+    margin-left: 30px;
+  }
+
+  #hero {
+    .phone {
+      left: 350px;
+    }
+    .bike {
+      left: 900px;
+      bottom: 65px;
+    }
+    
+  }
+
+
+@media screen and (max-width: 1215px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+
+  #hero {
+    .phone {
+      left: 400px;
+    }
+    .bike {
+      left: 800px;
+      bottom: 65px;
+    }
+    
+  }
+
+  
+
+  // footer
+}
+@media screen and (max-width: 1113px) {
+  .hero-main {
+    margin-left: 30px;
+  }
+
+  #hero {
+    .phone {
+      left: 250px;
+    }
+    .bike {
+      left: 650px;
+      bottom: 65px;
+    }
+    
+  }
+
+  
+
+  // footer
+}
+@media screen and (max-width: 976px) {
+    // one-time navbar 
+#navbar{
+
+    .container{
+        font-size: .8rem;
+        .pic-del-in{
+            display: none;
+        }
+    }}
+
+
+  .hero-main {
+    margin-left: 30px;
+  }
+
+  #hero {
+    .phone {
+      left: 150px;
+    }
+    .bike {
+      left: 550px;
+      bottom: 65px;
+    }
+    
+  }
+
+  
+
+  // footer
+}
+
+@media screen and (max-width: 871px) {
+    .hero-main {
+      margin-left: 30px;
+    }
+  
+    #hero {
+      .phone {
+        display: none;
+      }
+      .bike {
+        left: 350px;
+        bottom: 65px;
+      }
+
+      .container {
+        .hero-main {
+          .pic-del-in {
+            .address-input {
+              input {
+                width: 60vw;
+              }
+            }
+          }
+        }
+      }
+    }
+      
+    }
+  
+    
+  
+    // footer
+  }
+@media screen and (max-width: 689px) {
+    .hero-main {
+      margin-left: 30px;
+    }
+  
+    #hero {
+      .phone {
+        display: none;
+      }
+      .bike {
+        left: 5px;
+        bottom: 65px;
+      }
+
+      .container {
+        .hero-main {
+          .pic-del-in {
+            .address-input {
+              input {
+                width: 60vw;
+              }
+            }
+          }
+        }
+      }
+    }
+      
+    }
+  
+    
+
+
+

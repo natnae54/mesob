@@ -1,0 +1,313 @@
+// one-time navbar 
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    z-index: 100;
+
+    &.active{
+    background-color: var(--light-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all .3s;
+    }
+
+    
+
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+  // toggle
+  .toggle{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer; 
+    height: 20px;
+    
+
+    
+    &.toggle-in{
+        .line{
+            transition: transform .5s ease-in-out;
+            &1{
+                transform: rotate(25deg);
+            }
+        
+            &2{
+                transform: rotate(-25deg);
+            }
+        }
+       
+
+       }
+
+    .line{
+        width: 20px;
+        height: 3px;
+        background-color: var(--primary-color);
+    
+        &1{
+            margin-bottom: 5px;
+        }
+    }
+
+    
+
+}
+    
+
+
+        
+        // address input and pick deliver
+
+        .pic-del-in{
+        
+            display: flex;
+            align-items: center;
+            opacity: 0;
+
+            &.active-nav-search{
+                opacity: 1;
+            }
+
+            // address input
+
+
+            .address-input{
+                margin-left: 10px;
+                input{
+                    width: 35vw;
+                }}
+        
+            // pickup delivery
+            .pic-del{
+                display: flex;
+                background-color: var(--input-color);
+                padding: 8px 3px;
+                border-radius: 20px;
+
+                a{
+                    padding: 6px 10px;
+                    border-radius: 20px;
+                    color: var(--text-color);
+                    &.active{
+                        box-shadow: 0 0 5px var(--shadow);
+                        background-color: var(--light-color);
+                    }
+                }
+            }
+        }
+
+
+    // theme and signin
+    .theme-signin{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .theme-toggle{
+         height: 25px;
+         width: 25px;
+         cursor: pointer;
+        }
+
+        // signin signup
+        .signin{
+            display: flex;
+            
+            .btn{
+                padding: 12px 1rem;
+                margin-left: 1rem;
+                border-radius: 80px;
+            }
+            
+        }
+
+    }
+
+    }   
+}
+
+
+
+
+
+
+
+
+
+// second navbar
+
+
+// one-time navbar 
+#navbar{
+    &.nav-active{
+    background-color: var(--dark-glass);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: all .3s;
+    }
+    
+    &:hover{
+        opacity: 1;
+    }
+    
+    .container{
+        
+        
+        .logo-container-1{
+            a{
+                font-size: 1.5rem;
+                color: var(--light-color);
+            }
+        }
+
+        .pic-del-loc-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+
+            .pic-del{
+                display: flex;
+                background-color: var(--dark-glass);
+                padding: 8px 3px;
+                border-radius: 20px;
+
+                a{
+                    padding: 6px 10px;
+                    border-radius: 20px;
+                    color: var(--light-color);
+                    &.active{
+                        box-shadow: 0 0 5px var(--shadow);
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+                
+            }
+            
+            .loc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                gap: .4rem;
+                padding: 10px 35px;
+                border-radius: 20px;
+                background-color: var(--dark-glass);
+                &:hover{
+                    background-color: var(--primary-color);
+                    cursor: pointer;
+                }
+                i{
+                    color: rgba(255, 255, 255, 0.6);
+                    position: absolute;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                }
+
+                h4{
+                    
+                    color: var(--light-color);
+                }
+                
+            }
+
+
+        }
+
+        // search
+        .search-food{
+            position: relative;
+            
+            
+            .fa-search{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                color: rgba(255, 255, 255, 0.7);
+                transform: translateY(-50%);
+                
+              }
+            
+            input[type="search"]{
+                width: 500px;
+                height: 40px;
+                border: none;
+                background-color: var(--dark-glass);
+                
+                padding: 5px 15px;
+                // text-transform: uppercase;
+                
+                border-radius: 15px;
+                color: var(--light-color);
+                letter-spacing: 1.1px;
+                
+                &::placeholder{
+                  color: rgba(255, 255, 255, 0.7);
+                  
+                }
+            
+            
+                
+            
+                &:valid{
+                  outline: none;
+                }
+            
+              }
+            }
+            
+        }
+
+        // cart
+
+        .cart-icon{
+            display: flex;
+            
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                gap: .4rem;
+                padding: 10px 30px;
+                border-radius: 20px;
+                background-color: var(--dark-glass);
+                
+                i{
+                    color: rgba(255, 255, 255, 0.6);
+                    position: absolute;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                }
+
+                h4{
+                    margin-left: 15px;
+                    color: var(--light-color);
+                }
+
+                &:hover{
+                    background-color: var(--primary-color);
+                    cursor: pointer;
+                }
+        }
+
+
+
+
+    }
+
+
+
+

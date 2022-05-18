@@ -7,7 +7,7 @@
   <title>Mesob | Login</title>
   <link rel="stylesheet" href="scss/styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- navbar -->
@@ -42,18 +42,24 @@
        
        <!-- boxes end-->
     <h1>Login to <span class="p1"> Mesob</span></h1>
-    <form>
+    <form action="" id="loginForm">
       
-      <div class="form-control">
-        <input type="email" required>
+      <div class="form-control ">
+        <input type="text" class="email" required>
         <label >Email</label>
+        <i class="fas fa-circle-exclamation error"></i>
+        <i class="fas fa-circle-check correct"></i>
+        <small>sdfdvdfsd</small>
       </div>
       <div class="form-control">
-        <input type="password" required>
+        <input type="password" class="password" required>
         <label >password</label>
+        <i class="fas fa-circle-exclamation error "></i>
+        <i class="fas fa-circle-check correct"></i>
+        <small>sdfsd</small>
       </div>
       
-      <button class="btn --reverse">Login</button>
+      <button class="btn --reverse" type="submit">Login</button>
       <!-- <button class="btn --primary">Login</button> -->
       <p class="text-1">Don't have an acount? <a href="signup.html">Register</a></p>
     </form>
